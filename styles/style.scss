@@ -1,0 +1,114 @@
+$font-stack: Comic;
+$light-blue: #2DE8DF;
+$back-color: #fff;
+$border-bottom-header: #EBEBEB;
+$hover-color: #E5E5E5;
+$button-color: #33F9E7;
+$button-text: #24C0B8;
+$header-text-color: #EE8A55;
+
+html,body {
+  width: 1180px;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  background: $back-color;
+}
+header {
+  height: 180px;
+  width: 100%;
+  border-top: 10px solid $light-blue;
+  border-bottom: 1px solid $border-bottom-header;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-stack;
+
+  nav {
+    margin: 0;
+    padding: 0 120px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-flex;
+        &:hover {
+          border-bottom: 1px solid $light-blue;
+        }
+        a {
+          display: block;
+          width: auto;
+          height: 27px;
+          font-size: 18px;
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+#logo {
+  position: relative;
+  top: 50px;
+  margin-left: 97px;
+  margin-right: 94px;
+  &:hover {
+    border-bottom: none;
+  }
+}
+.home-nav {
+  margin-right: 191px;
+}
+.contact-nav {
+  margin-left: 177px;
+}
+#main-title {
+  height: 350px;
+  text-align: center;
+  border-bottom: 1px solid $border-bottom-header;
+  margin-top: 100px;
+  h1 {
+    font-size: 80px;
+  }
+  button {
+    height: 70px;
+    width: 300px;
+    background-color: $button-color;
+    font-size: 30px;
+    color: $button-text;
+    border: 0px;
+    border-radius: 7px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+main {
+  padding-left: 120px;
+  height: 350px;
+}
+.text-block {
+  width: 300px;
+  float: left;
+  margin-left: 20px;
+  h1 {
+    color: $header-text-color;
+    font-size: 32px;
+  }
+  img {
+    padding: 1px;
+    border: 1px solid #000;
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  p {
+    line-height: 1.3;
+  }
+}
