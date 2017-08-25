@@ -1,56 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chop-chop Task</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" type="image/png" href="styles/img/sample-pack.png">
-    <link rel="stylesheet" href="./styles/font-awsome/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li class="home-nav"><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li id="logo"><img src="./styles/img/sample-pack.png" alt="Sample&Pack"></li>
-          <li><a href="#">About Us</a></li>
-          <li class="contact-nav"><a href="#">Contact</a></li>
+      <!-- navigation -->
+      <div class="topnav" id="myTopnav">
+        <div class="nav-items" id="home"><a href="#home">Home</a></div>
+        <div class="nav-items" id="products"><a href="#products">Products</a></div>
+        <div id="logo"><img src="./styles/img/sample-pack.png" alt="Sample&Pack"></div>
+        <div class="nav-items" id="about"><a href="#about">About us</a></div>
+        <div class="nav-items" id="contact"><a href="#contact">Contact</a></div>
+        <div class="nav-items" id="ham-icon"><a href="javascript:void(0);" class="icon">&#9776;</a></div>
+      </div>
+      <!-- <nav>
+        <ul id="nav-1">
+          <li id="home"><a href="#">Home</a></li>
+          <li id="products"><a href="#products">Products</a></li>
         </ul>
-      </nav>
+        <!-- sample & pack logo -->
+        <!-- <div id="logo"><img src="./styles/img/sample-pack.png" alt="Sample&Pack"></div>
+        <ul id="nav-2">
+          <li id="about-us"><a href="#about-us">About us</a></li>
+          <li id="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav> -->
+
     </header>
+
+    <!-- this is just a sample page - main title -->
     <section id="main-title">
       <h1>This is just a sample page</h1>
       <button type="button"  id="main-button" name="push-the-button">push the button</button>
     </section>
-    <main>
-      <article class="text-block">
-        <h1>A heading title</h1>
-        <img src="./styles/img/text-column-img.png" alt="Code Picture">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        At elementum eu facilisis sed odio. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Neque aliquam vestibulum morbi blandit cursus risus. Sed odio morbi quis commodo odio aenean. In eu mi bibendum neque egestas. Posuere ac ut consequat semper viverra.
-      </article>
-      <article class="text-block">
-        <h1>A much longer heading title</h1>
-        <img src="./styles/img/text-column-img.png" alt="Code Picture">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        At elementum eu facilisis sed odio. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Neque aliquam vestibulum morbi blandit cursus risus. Sed odio morbi quis commodo odio aenean. In eu mi bibendum neque egestas. Posuere ac ut consequat semper viverra.
-      </article>
-      <article class="text-block">
-        <h1>A heading title</h1>
-        <img src="./styles/img/text-column-img.png" alt="Code Picture">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        At elementum eu facilisis sed odio. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Neque aliquam vestibulum morbi blandit cursus risus. Sed odio morbi quis commodo odio aenean. In eu mi bibendum neque egestas. Posuere ac ut consequat semper viverra.
-      </article>
+    <!-- our products - main content -->
+    <main id="products">
+
+        <article class="text-block">
+          <h1>A heading title</h1>
+          <img src="./styles/img/text-column-img.png" alt="Code Picture">
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <div class="toggle-text" id="toggle-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-1" class="read-more-btn">- read more</a></span>
+        </article>
+
+        <article class="text-block">
+          <h1>A much longer heading title</h1>
+          <img src="./styles/img/text-column-img.png" alt="Code Picture">
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <div class="toggle-text" id="toggle-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-2" class="read-more-btn">- read more</a></span>
+        </article>
+
+        <article class="text-block">
+          <h1>A heading title</h1>
+          <img src="./styles/img/text-column-img.png" alt="Code Picture">
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <div class="toggle-text" id="toggle-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-3" class="read-more-btn">- read more</a></span>
+        </article>
+
     </main>
+    <!-- contact us form -->
     <section id="contact-us">
-
+      <form class="contact-us-form" action="index.html" method="post">
+        <h1>Contact us</h1>
+        <div class="contact-inpts">
+          <input  class="contact-inp" type="text" name="name" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'" required>
+          <input class="contact-inp" type="email" name="e-mail" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" required>
+          <input class="contact-inp" type="number" name="phone" placeholder="phone" onfocus="this.placeholder=''" onblur="this.placeholder='phone'" required>
+        </div>
+        <textarea placeholder="your message" name="name" onfocus="this.placeholder=''" onblur="this.placeholder='your message'" required></textarea>
+        <div class="contact-btn">
+          <button type="button" name="button">send message</button>
+        </div>
+      </form>
     </section>
+    <!-- back to top button -->
+    <div class="back-top-btn">
+      <button id="back-top-btn" type="button" name="button">back to top</button>
+    </div>
+    <!-- footer -->
     <footer>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <div class="table">
+        <div class="table-row" href="/mylink">
+            <a href="#"><div class="table-cell">--home</div></a>
+            <a href="#products"><div class="table-cell">--products</div></a>
+        </div>
+        <div class="table-row" href="/mylink">
+            <a href="#contact-us"><div class="table-cell">--about us</div></a>
+            <a href="#"><div class="table-cell">--contact</div></a>
+        </div>
+      </div>
+      <div class="social-media-container">
+        <a href="https://twitter.com/KamilCebula2" target="_blank"><span class="social-media">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </span></a>
+        <a href="https://www.facebook.com/kamil.cebula.37" target="_blank"><span class="social-media">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </span></a>
+      </div>
+      <div class="copyright">
+        Copyright &copy 2010 Sample & Pack, Inc.
+      </div>
     </footer>
-
+  <!-- scripts -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
   </body>
