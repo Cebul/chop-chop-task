@@ -17,58 +17,45 @@
         <div id="logo"><img src="./styles/img/sample-pack.png" alt="Sample&Pack"></div>
         <div class="nav-items" id="about"><a href="#about">About us</a></div>
         <div class="nav-items" id="contact"><a href="#contact">Contact</a></div>
-        <div class="nav-items" id="ham-icon"><a href="javascript:void(0);" class="icon">&#9776;</a></div>
+        <div id="ham-icon"><a href="javascript:void(0);" class="icon">&#9776;</a></div>
       </div>
-      <!-- <nav>
-        <ul id="nav-1">
-          <li id="home"><a href="#">Home</a></li>
-          <li id="products"><a href="#products">Products</a></li>
-        </ul>
-        <!-- sample & pack logo -->
-        <!-- <div id="logo"><img src="./styles/img/sample-pack.png" alt="Sample&Pack"></div>
-        <ul id="nav-2">
-          <li id="about-us"><a href="#about-us">About us</a></li>
-          <li id="contact"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav> -->
-
     </header>
 
     <!-- this is just a sample page - main title -->
-    <section id="main-title">
+    <section class="main-title">
       <h1>This is just a sample page</h1>
       <button type="button"  id="main-button" name="push-the-button">push the button</button>
     </section>
     <!-- our products - main content -->
-    <main id="products">
-
+    <main class="products">
+      <div class="products-container">
         <article class="text-block">
           <h1>A heading title</h1>
           <img src="./styles/img/text-column-img.png" alt="Code Picture">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.</p>
           <div class="toggle-text" id="toggle-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
-          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-1" class="read-more-btn">- read more</a></span>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-1" class="read-more-btn">&mdash; read more</a></span>
         </article>
 
         <article class="text-block">
           <h1>A much longer heading title</h1>
           <img src="./styles/img/text-column-img.png" alt="Code Picture">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.</p>
           <div class="toggle-text" id="toggle-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
-          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-2" class="read-more-btn">- read more</a></span>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-2" class="read-more-btn">&mdash; read more</a></span>
         </article>
 
         <article class="text-block">
           <h1>A heading title</h1>
           <img src="./styles/img/text-column-img.png" alt="Code Picture">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p>
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.</p>
           <div class="toggle-text" id="toggle-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
-          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-3" class="read-more-btn">- read more</a></span>
+          <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-3" class="read-more-btn">&mdash; read more</a></span>
         </article>
-
+      </div>
     </main>
     <!-- contact us form -->
-    <section id="contact-us">
+    <section class="contact-us">
       <form class="contact-us-form" action="index.html" method="post">
         <h1>Contact us</h1>
         <div class="contact-inpts">

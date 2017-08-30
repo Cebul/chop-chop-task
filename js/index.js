@@ -8,16 +8,22 @@ $(document).ready(function() {
     }
   });
 
+  // $("#main-button").click(function() {
+  //   $('.text-block:contains("ipsum")').each(function() {
+  //     $(this).html($(this).html().replace("ipsum", "<span style=color:red>ipsum</span>"));
+  //   });
+  // });
+
   $("#read-more-btn-1").click(function() {
 
     var val = $(this).text();
 
-    if(val == "- read more") {
-      $("#toggle-text-1").css("height", "auto");
-      $(this).text("less");
+    if(val == "\u2014 read more") {
+      $("#toggle-text-1").css("display", "block");
+      $(this).text("\u2014 less");
     } else {
-      $("#toggle-text-1").css("height", "100px");
-      $(this).text("- read more");
+      $("#toggle-text-1").css("display", "none");
+      $(this).text("\u2014 read more");
     }
 
   });
@@ -26,12 +32,12 @@ $(document).ready(function() {
 
     var val = $(this).text();
 
-    if(val == "- read more") {
-      $("#toggle-text-2").css("height", "auto");
-      $(this).text("less");
+    if(val == "\u2014 read more") {
+      $("#toggle-text-2").css("display", "block");
+      $(this).text("\u2014 less");
     } else {
-      $("#toggle-text-2").css("height", "100px");
-      $(this).text("- read more");
+      $("#toggle-text-2").css("display", "none");
+      $(this).text("\u2014 read more");
     }
 
   });
@@ -40,15 +46,16 @@ $(document).ready(function() {
 
     var val = $(this).text();
 
-    if(val == "- read more") {
-      $("#toggle-text-3").css("height", "auto");
-      $(this).text("less");
+    if(val == "\u2014 read more") {
+      $("#toggle-text-3").css("display", "block");
+      $(this).text("\u2014 less");
     } else {
-      $("#toggle-text-3").css("height", "100px");
-      $(this).text("- read more");
+      $("#toggle-text-3").css("display", "none");
+      $(this).text("\u2014 read more");
     }
 
   });
+
 // animate back to top
   $('#back-top-btn').click(function() {
     $('html,body').animate({scrollTop: 0}, "slow");
