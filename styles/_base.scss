@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
+
+$font-stack: 'Open Sans', sans-serif;
+$font-bree: 'Bree Serif', serif;
+$light-blue: #2DE8DF;
+$back-color: #fff;
+$border-bottom-header: #EBEBEB;
+$hover-color: #E5E5E5;
+$button-color: #33F9E7;
+$button-hover-color: #35F2E1;
+$button-text: #24C0B8;
+$header-text-color: #EE8A55;
+$inpts-border-color: #DCDCDC;
+$placeholder-color: #D1D1D1;
+$read-more-hover-color: #36F2E1;
+
+html {
+  background: #000;
+}
+body {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font-stack;
+  background: $back-color;
+}
+header {
+  height: 180px;
+  border-top: 10px solid $light-blue;
+  border-bottom: 1px solid $border-bottom-header;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color, $inset: false) {
+  @if inset {
+    -webkit-box-shadow: inset $horizontal $vertical $blur $spread $color;
+    -moz-box-shadow: inset $horizontal $vertical $blur $spread $color;
+    box-shadow: inset $horizontal $vertical $blur $spread $color;
+  } @else {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+    box-shadow: $horizontal $vertical $blur $spread $color;
+  }
+}

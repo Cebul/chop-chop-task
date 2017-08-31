@@ -40,7 +40,7 @@
         <article class="text-block">
           <h1>A much longer heading title</h1>
           <img src="./styles/img/text-column-img.png" alt="Code Picture">
-          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.</p>
+          <p class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.Vivamus.</p>
           <div class="toggle-text" id="toggle-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna. Vestibulum ullamcorper, dolor eu viverra imperdiet, orci tortor fermentum erat, in pharetra felis neque vitae ex.<p>Vivamus nec magna ut nulla rutrum interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nisi vestibulum, eleifend sapien a, sollicitudin urna.</p></div>
           <span class="read-more"><a href="javascript:void(0)" id="read-more-btn-2" class="read-more-btn">&mdash; read more</a></span>
         </article>
@@ -58,14 +58,16 @@
     <section class="contact-us">
       <form class="contact-us-form" action="index.html" method="post">
         <h1>Contact us</h1>
-        <div class="contact-inpts">
-          <input  class="contact-inp" type="text" name="name" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'" required>
-          <input class="contact-inp" type="email" name="e-mail" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" required>
-          <input class="contact-inp" type="number" name="phone" placeholder="phone" onfocus="this.placeholder=''" onblur="this.placeholder='phone'" required>
-        </div>
-        <textarea placeholder="your message" name="name" onfocus="this.placeholder=''" onblur="this.placeholder='your message'" required></textarea>
-        <div class="contact-btn">
-          <button type="button" name="button">send message</button>
+        <div class="contact-all-inpts">
+          <div class="contact-inpts">
+            <input  class="contact-inp" type="text" name="name" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'" required>
+            <input class="contact-inp" type="email" name="e-mail" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'" required>
+            <input class="contact-inp" type="number" name="phone" placeholder="phone" onfocus="this.placeholder=''" onblur="this.placeholder='phone'" required>
+          </div>
+          <textarea placeholder="your message" name="name" onfocus="this.placeholder=''" onblur="this.placeholder='your message'" required></textarea>
+          <div class="contact-btn">
+            <button type="button" name="button">send message</button>
+          </div>
         </div>
       </form>
     </section>
@@ -77,12 +79,12 @@
     <footer>
       <div class="table">
         <div class="table-row" href="/mylink">
-            <a href="#"><div class="table-cell">--home</div></a>
-            <a href="#products"><div class="table-cell">--products</div></a>
+            <a href="#"><div class="table-cell">&mdash; home</div></a>
+            <a href="#products"><div class="table-cell">&mdash; products</div></a>
         </div>
         <div class="table-row" href="/mylink">
-            <a href="#contact-us"><div class="table-cell">--about us</div></a>
-            <a href="#"><div class="table-cell">--contact</div></a>
+            <a href="#contact-us"><div class="table-cell">&mdash; about us</div></a>
+            <a href="#"><div class="table-cell">&mdash; contact</div></a>
         </div>
       </div>
       <div class="social-media-container">
