@@ -8,15 +8,16 @@ $(document).ready(function() {
     }
   });
 
-  // $("#main-button").click(function() {
-  //   $('.text-block:contains("ipsum")').each(function() {
-  //     $(this).html($(this).html().replace("ipsum", "<span style=color:red>ipsum</span>"));
-  //   });
-  // });
+  $("#main-button").click(function() {
+    $('p:contains("ipsum")').each(function() {
+      $(this).html($(this).html().replace("ipsum", "<span style=color:red>ipsum</span>"));
+      // $(this).html($(this).html().replace("<span style=color:red>ipsum</span>", "ipsum"));
+    });
+  });
 
   $("#read-more-btn-1").click(function() {
 
-    var val = $(this).text();
+    const val = $(this).text();
 
     if(val == "\u2014 read more") {
       $("#toggle-text-1").css("display", "block");
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
   $("#read-more-btn-2").click(function() {
 
-    var val = $(this).text();
+    const val = $(this).text();
 
     if(val == "\u2014 read more") {
       $("#toggle-text-2").css("display", "block");
@@ -44,7 +45,7 @@ $(document).ready(function() {
 
   $("#read-more-btn-3").click(function() {
 
-    var val = $(this).text();
+    const val = $(this).text();
 
     if(val == "\u2014 read more") {
       $("#toggle-text-3").css("display", "block");

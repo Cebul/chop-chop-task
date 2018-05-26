@@ -13,9 +13,11 @@
   button {
     width: 300px;
     height: 70px;
+    line-height: 70px;
     margin-top: -10px;
     background: $button-color;
     color: $button-text;
+    font-family: $font-stack;
     border: none;
     outline: none;
     @include rounded(5px);
@@ -24,6 +26,22 @@
     &:hover {
       cursor: pointer;
       @include box-shadow(0, 5px, 0, 0, $button-text);
+    }
+  }
+  @media screen and (max-width: 620px) {
+    h1 {
+      font-size: 32px;
+    }
+    button {
+      width: 200px;
+      height: 45px;
+      line-height: 30px;
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    h1 {
+      font-size: 52px;
     }
   }
 }
